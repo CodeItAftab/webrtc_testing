@@ -32,8 +32,8 @@ function Call() {
       // console.log("ICE candidate", data);
       // await PeerService.addIceCandidate(data.candidate);
       console.log("ICE candidate", data.candidate);
-      await PeerService.addIceCandidate(data.candidate);
-      console.log("ICE candidate added", data.candidate);
+      await PeerService.addIceCandidate(data?.candidate);
+      console.log("ICE candidate added", data?.candidate);
     });
 
     socket?.on("negotiation-needed", async ({ offer, from }) => {
