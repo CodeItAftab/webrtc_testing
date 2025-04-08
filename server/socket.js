@@ -9,7 +9,7 @@ const connectSocket = (server) => {
   if (!io) {
     io = new Server(server, {
       cors: {
-        origin: "*",
+        origin: "https://webrtc-testing-one.vercel.app",
         methods: ["GET", "POST"],
       },
     });
